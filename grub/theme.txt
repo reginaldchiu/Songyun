@@ -1,0 +1,59 @@
+# ==================================================
+# 宋韵·墨卷
+# GRUB Theme
+# Modern Oriental Minimal
+# ==================================================
+
+
+# ----------------------------
+# 全局
+# ----------------------------
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Terminus Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-border: "0"
+
+# ----------------------------
+# 菜单区域
+# ----------------------------
+
++ boot_menu {
+    left = 30%
+    top = 30%
+    width = 40%
+    height = 40%
+    item_font = "DejaVu Sans Regular 16"
+    item_color = "#D8D0BC"
+    selected_item_color = "#101820"
+    icon-width = 32
+    icon-height = 32
+    item_icon_space = 20
+    item_height = 36
+    item_padding = 5
+    item_spacing = 10
+    selected_item_pixmap_style = "select_*.png"
+}
+
++ image {
+    top = 100%-50
+    left = 50%-240
+    width = 480
+    height = 42
+    file = "info.png"
+}
+
+
++ label {
+    top = 82%
+    left = 32%
+    width = 36%
+    align = "center"
+    id = "__timeout__"
+    text = "Booting in %d seconds"
+    color = "#D8D0BC"
+    font = "DejaVu Sans Regular 16"
+}
+

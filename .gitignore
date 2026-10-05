@@ -1,0 +1,17 @@
+# KDE / Plasma
+*.swp
+*.back
+
+# Neovim
+.lazy-lock.json
+
+# Local files
+*.log
+
+# Build output
+build/
+dist/
+
+# Personal secrets
+.env
+*.secret
