@@ -1,0 +1,89 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+[](bg:#A8B5B2 fg:#6FA58A)\
+$directory\
+[](bg:#8CC7A1 fg:#A8B5B2)\
+$git_branch\
+$git_status\
+[](bg:#18222B fg:#8CC7A1)\
+$c\
+$cpp\
+$rust\
+$nodejs\
+$java\
+$python\
+[](bg:#101820 fg:#18222B)\
+$docker_context\
+$time\
+[](fg:#101820)\
+\n$character
+"""
+
+[os]
+disabled = false
+style = "bg:#6FA58A fg:#101820"
+format = "[ $symbol ]($style)"
+
+[os.symbols]
+Arch = '󰣇'
+
+[directory]
+style = "fg:#101820 bg:#A8B5B2"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = ".../"
+read_only = "󰌾"
+read_only_style = "fg:#C97B63 bg:#A8B5B2"
+
+[git_branch]
+symbol = ""
+style = "bg:#8CC7A1"
+format = '[[ $symbol $branch ](fg:#101820 bg:#8CC7A1)]($style)'
+
+[git_status]
+style = "bg:#8CC7A1"
+format = "[[($all_status$ahead_behind )](fg:#C97B63 bg:#8CC7A1)]($style)"
+
+[c]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[cpp]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[java]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#18222B"
+format = '[[ $symbol ($version) ](fg:#E8E4D9 bg:#18222B)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:#101820"
+format = '[[ $symbol$context ](fg:#8CC7A1 bg:#101820)]($style)'
+only_with_files = false
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#101820"
+format = '[[  $time ](fg:#A8B5B2 bg:#101820)]($style)'
