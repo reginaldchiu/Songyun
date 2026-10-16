@@ -24,7 +24,6 @@ opt.hlsearch = true
 opt.incsearch = true
 
 opt.encoding = "utf-8"
-opt.fileencoding = "utf-8"
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
@@ -46,6 +45,7 @@ opt.completeopt = {
     "menu",
     "menuone",
     "noselect",
+    "popup",
 }
 
 opt.cmdheight = 1
